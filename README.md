@@ -3,7 +3,7 @@
 <img src="docs/assets/banner.png" width="820" alt="Pebble — Your Personal AI Assistant" />
 
 <p>
-  <img alt="version" src="https://img.shields.io/badge/version-0.9.0-e7a6bd?style=for-the-badge" />
+  <img alt="version" src="https://img.shields.io/badge/version-0.10.5-e7a6bd?style=for-the-badge" />
   <img alt="platform" src="https://img.shields.io/badge/Windows-10%20%2F%2011-9aa4d4?style=for-the-badge&logo=windows&logoColor=white" />
   <img alt="local" src="https://img.shields.io/badge/100%25-local-7cc6a6?style=for-the-badge" />
   <img alt="license" src="https://img.shields.io/badge/license-MIT-cbb9c9?style=for-the-badge" />
@@ -70,13 +70,25 @@ The actions come in three levels, and the riskier something is, the more it take
 
 A few places are simply off-limits no matter what: `C:\Windows`, `Program Files`, `ProgramData`, `AppData`, and your drive roots. By default he only works inside your home folder, and you can widen that in Settings whenever you want.
 
+## What's new in 0.10.5
+
+**He can match your tone.** Pebble mirrors your energy and length now — playful when you're playful, gentle when you're down, brief when you're brief. It's on by default, and there's a switch in Settings → You & Pebble if you'd rather he didn't.
+
+**Show him an image.** Drag any image onto the window (the whole app turns into a drop zone) or use the new image button in the chat box, and Pebble reads the text out of it. Flip OCR on in Settings → Extensions first.
+
+**Replies type themselves in.** Streamed text fades in gently as he writes, and the little mode hints under the chat box now drift in softly instead of sitting there like a warning.
+
+**A warmer home screen.** He greets you by the time of day, and the chat room got a light visual polish.
+
+Before this came the 0.10.1 friend update: three chat modes (Chat / Do / Plan), a warmer voice, an opt-in memory he curates, a "let Pebble ask you something" button, and date plus weather. And 0.10.0 brought live streaming with a Stop button, a friendlier first run, the Content Search / OCR / Duplicate Cleaner extensions, and the safety hardening.
+
 ## Getting started
 
 1. **Install [Ollama](https://ollama.com)** and pull a model for it to run:
    ```bash
    ollama pull llama3.2
    ```
-2. **Grab Pebble** from the [latest release](https://github.com/dasler08/Pebble---Your-Personal-Ai-Assistant/releases/latest) and run **`Pebble_0.9.0_x64-setup.exe`**. Would rather skip the installer? There's a portable `Pebble.exe` too.
+2. **Grab Pebble** from the [latest release](https://github.com/dasler08/Pebble---Your-Personal-Ai-Assistant/releases/latest) and run **`Pebble_0.10.5_x64-setup.exe`**. Would rather skip the installer? There's a portable `Pebble.exe` too.
 3. **Say hi.** He'll introduce himself, ask your name, take a look at your PC, and suggest a model that'll run nicely on it.
 
 Everything lives locally in `C:\AI_Assistant\`, which is your database and the recoverable Trash.
